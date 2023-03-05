@@ -15,9 +15,15 @@ Goals of this project to create weekly EC2 AMI backup of all EC2 instances runni
 ## To deploy this code to a Lambda function, you can follow these steps:
 
 1- Open the AWS Management Console and navigate to the Lambda service.
+
 2- Click the "Create Function" button and choose the "Author from scratch" option.
+
 3- Enter a name for your function and choose "Python 3.9" as the runtime.
+
 4- Under "Permissions", choose "Create a new role with basic Lambda permissions".
+
 5- Click the "Create function" button to create the function.
+
 6- In the function editor, copy and paste the code above.
+
 7- Set the SNS_TOPIC
