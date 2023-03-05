@@ -4,12 +4,12 @@
 --------------------------------------------------
 
 
-### Goal
+## Goal
 Goals of this project to create weekly EC2 AMI backup of all EC2 instances running in the us-east-1 region and delete AMIs older than 30 days.
 
 ---------------------------------------------------
 
-### Pre-Requisites
+## Pre-Requisites
 1- Deploy Lambda Function as per the architecture shown above with required IAM roles.
 2- Schedule Lambda Function to run weekly once Sunday 5 AM EST using cloudwatch event as Lambda trigger.
 3- Create 5 EC2 instances with Tags  as “Name: dpt-web-server”
@@ -17,7 +17,7 @@ Goals of this project to create weekly EC2 AMI backup of all EC2 instances runni
 
 ---------------------------------------------------
 
-### Description
+## Description
 This Python code is designed to create Amazon Machine Images (AMIs) for all EC2 instances in the us-east-1 region and delete old unused AMIs which are older than 30 days. It uses the Boto3 library to interact with the Amazon Web Services (AWS) EC2 and SNS (Simple Notification Service) APIs.
 
 The code starts by initializing the EC2 and SNS clients and obtaining a list of all EC2 instances in the us-east-1 region. It then loops through the instances, creates an AMI for each instance, and adds tags to identify which AMI belongs to which EC2 instance. The AMI name is created using the instance name and the date when the AMI was created. The AMI description includes the instance name and the date when the AMI was created.
