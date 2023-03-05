@@ -11,8 +11,11 @@ Goals of this project to create weekly EC2 AMI backup of all EC2 instances runni
 
 ## Pre-Requisites
 1- Deploy Lambda Function as per the architecture shown above with required IAM roles.
+
 2- Schedule Lambda Function to run weekly once Sunday 5 AM EST using cloudwatch event as Lambda trigger.
+
 3- Create 5 EC2 instances with Tags  as “Name: dpt-web-server”
+
 4- Create SNS topic and subscribe e-mail to receive notifications.
 
 ---------------------------------------------------
