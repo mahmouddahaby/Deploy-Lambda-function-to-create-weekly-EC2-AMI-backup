@@ -1,5 +1,6 @@
 # Deploy-Lambda-function-to-create-weekly-EC2-AMI-backup!!
-[Lambda-ami](https://user-images.githubusercontent.com/99130650/222965557-70381352-30c3-478e-811c-2d7ec234c68f.jpeg)
+![Lambda-ami](https://user-images.githubusercontent.com/99130650/222965587-d14863b5-e79c-4083-bd56-ff5c3356f7c6.jpeg)
+
 
 
 ### Goal
